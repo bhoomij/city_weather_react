@@ -13,3 +13,22 @@ export function fetchWeather(city) {
         payload: request
     }
 }
+
+// function createResponse(resonse) {
+//     return {
+//         type: FETCH_WEATHER,
+//         payload: resonse
+//     }
+// }
+
+// export function fetchWeather(city) {
+//     return (dispatch, getState) => {
+
+//         const url = `${WEATHER_URL}&q=${city},us`;
+//         return axios.get(url).then(function (res) {
+//             dispatch(createResponse(res));
+//         }).catch(function (err) {
+//             dispatch(createResponse(err));
+//         });
+//     };
+// }

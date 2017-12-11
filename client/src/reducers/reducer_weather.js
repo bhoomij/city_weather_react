@@ -4,12 +4,13 @@ export default function (state = [], action) {
     switch (action.type) {
         case FETCH_WEATHER: {
             if (!action.error) {
-                return [action.payload.data, ...state];
+                return [action.payload, ...state];
             }
             else {
                 return state;
             }
         }
+        default:
+            return state;
     }
-    return state;
 }

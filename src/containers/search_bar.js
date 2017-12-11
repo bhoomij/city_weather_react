@@ -20,6 +20,7 @@ class SearchBar extends Component {
             <form className="input-group"
                 onSubmit={this.onFormSubmit}
             >
+                <label htmlFor="">Type US city name</label>
                 <input type="text"
                     placeholder="Get five-day weather forcase for your favourite cities"
                     className="form-control"
